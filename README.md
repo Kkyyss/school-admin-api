@@ -2,6 +2,8 @@
 
 ## Hosted APIs (Heroku)
 **Base URL:** [https://dev-school-admin-api.herokuapp.com/api/v1.0](https://dev-school-admin-api.herokuapp.com/)
+
+
 | APIs   | Mehtods |
 |---------|------------|
 |[/register](https://dev-school-admin-api.herokuapp.com//api/v1.0/register) | POST |
