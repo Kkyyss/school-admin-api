@@ -11,5 +11,8 @@ database-seed:
 test-local:
 	npm run test:local
 
+test-dev:
+	npm run test:dev
+
 test-local-file:
 	./node_modules/.bin/env-cmd -e test,local ./node_modules/mocha/bin/mocha --no-timeouts $(path)
