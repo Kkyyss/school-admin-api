@@ -6,7 +6,7 @@
 
 | APIs   | Mehtods |
 |---------|------------|
-|[/register](https://dev-school-admin-api.herokuapp.com//api/v1.0/register) | POST |
+|[/register](https://dev-school-admin-api.herokuapp.com/api/v1.0/register) | POST |
 | [/commonstudents](https://dev-school-admin-api.herokuapp.com/api/v1.0/commonstudents) | GET |
 |[/suspend](https://dev-school-admin-api.herokuapp.com/api/v1.0/suspend)| POST |
 | [/suspend](https://dev-school-admin-api.herokuapp.com/api/v1.0/retrievefornotification) | POST |
