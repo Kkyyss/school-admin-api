@@ -18,5 +18,11 @@ module.exports = {
     dialect: DATABASE.DIALECT || initial.dialect,
   },
   test: initial,
-  production: {},
+  production: {
+    database: DATABASE.DATABASE || initial.database,
+    username: DATABASE.USERNAME || initial.username,
+    password: DATABASE.PASSWORD || initial.password,
+    host: DATABASE.HSOT || initial.host,
+    dialect: DATABASE.DIALECT || initial.dialect,
+  },
 };
