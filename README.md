@@ -4,7 +4,8 @@ Yet another simple nodeJs + mysql API demo.
 Makefile
 make database-reset
 
-Installation:
+## Installation:
+`git clone `
 npm install
 
 npm run start:dev

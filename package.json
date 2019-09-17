@@ -4,6 +4,7 @@
   "description": "Backend API for student registration and management",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/env-cmd -e development node index.js",
     "start:dev": "./node_modules/.bin/env-cmd -e development node index.js",
     "start:local": "./node_modules/.bin/env-cmd -e local node index.js",
     "test:dev": "./node_modules/.bin/env-cmd -e test,development ./node_modules/mocha/bin/mocha -S --no-timeouts ./tests",
