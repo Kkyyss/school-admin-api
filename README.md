@@ -9,7 +9,7 @@
 |[/register](https://dev-school-admin-api.herokuapp.com/api/v1.0/register) | POST |
 | [/commonstudents](https://dev-school-admin-api.herokuapp.com/api/v1.0/commonstudents) | GET |
 |[/suspend](https://dev-school-admin-api.herokuapp.com/api/v1.0/suspend)| POST |
-| [/suspend](https://dev-school-admin-api.herokuapp.com/api/v1.0/retrievefornotification) | POST |
+| [/retrievefornotification](https://dev-school-admin-api.herokuapp.com/api/v1.0/retrievefornotification) | POST |
 
 ## Local Setup
 **Base URL:** [http://localhost:5000/api/v1.0](https://dev-school-admin-api.herokuapp.com/)
