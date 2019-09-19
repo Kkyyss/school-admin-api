@@ -1,29 +1,18 @@
-# Shool-admin-api
+database-reset:
+	npx sequelize-cli db:migrate:undo:all
+	npx sequelize-cli db:migrate
 
-## Hosted APIs (Heroku)
-**Base URL:** [https://dev-school-admin-api.herokuapp.com/api/v1.0](https://dev-school-admin-api.herokuapp.com/)
-| APIs   | Mehtods |
-|---------|------------|
-|[/register](https://dev-school-admin-api.herokuapp.com//api/v1.0/register) | POST |
-| [/commonstudents](https://dev-school-admin-api.herokuapp.com/api/v1.0/commonstudents) | GET |
-|[/suspend](https://dev-school-admin-api.herokuapp.com/api/v1.0/suspend)| POST |
-| [/suspend](https://dev-school-admin-api.herokuapp.com/api/v1.0/retrievefornotification) | POST |
+database-clean:
+	npx sequelize-cli db:seed:undo:all
 
-## Local Setup
-**Base URL:** [http://localhost:5000/api/v1.0](https://dev-school-admin-api.herokuapp.com/)
-1. use ssh `git clone git@github.com:Kkyyss/school-admin-api.git` or
-use https `git clone https://github.com/Kkyyss/school-admin-api.git`
-2. `npm install`
-3. `npm start` (development mode by default)
+database-seed:
+	npx sequelize-cli db:seed:all
 
-## Test (Mocha)
-**Run all test cases:**
-1. `make test-dev` ---- hosted APIs
-2. `make test-local` ---- local APIs
+test-local:
+	npm run test:local
 
-**Run test through specific file:**
-1. `make path=./tests/{filename.test.js} test-dev-file` ---- hosted APIs
-2. `make path=./tests/{filename.test.js} test-local-file` ---- local APIs
+test-dev:
+	npm run test:dev
 
-## Others
-* `make database-reset` ---- database migration
+test-local-file:
+	./node_modules/.bin/env-cmd -e test,local ./node_modules/mocha/bin/mocha --no-timeouts $(path)
