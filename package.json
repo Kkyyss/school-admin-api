@@ -37,7 +37,7 @@
     "email-validator": "^2.0.4",
     "env-cmd": "^10.0.1",
     "errorhandler": "^1.5.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "helmet": "^3.21.0",
     "morgan": "^1.9.1",
     "mysql2": "^1.7.0",
